@@ -50,7 +50,7 @@ a {
   margin: 0 auto;
   display: block;
   text-align: center;
-  padding: 3px;
+  color: white;
 }
 
 .fas {
@@ -85,7 +85,7 @@ a {
   border: 2px solid grey;
   border-radius: 10px;
   max-width: 650px;
-  margin: 15px auto;
+  margin: 3px;
   display: block;
   background-image: url(https://images.pexels.com/photos/1828305/pexels-photo-1828305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   font-family: "Quicksand", sans-serif;
