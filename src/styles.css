@@ -46,6 +46,13 @@ ul {
   margin: 0 0 15px 0;
 }
 
+a {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  padding: 3px;
+}
+
 .fas {
   font-size: 25px;
   color: black;
