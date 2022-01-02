@@ -57,33 +57,46 @@
         </form>
         <h1 id="city"></h1>
         <h2></h2>
-        <br />
-        <img src="media/weathericon.png" alt="Weather Icon" width="120" />
+        <h3 id="description"></h3>
+        <img
+          src="media/weathericon.png"
+          alt="Weather Icon"
+          width="120"
+          class="currentImage"
+        />
+        <div>
+          <ul class="conditions">
+            <li>WIND: <span id="wind"></span>m/h</li>
+            <li>HUMIDITY: <span id="humidity"></span>%</li>
+          </ul>
+        </div>
         <div class="temperature" id="temperature">
           <span id="celcius">°C</span>
+          <span id="fahrenheit">°F</span>
         </div>
-        <h3>
+
+        <h4>
           <strong>5-DAY </strong>
           FORECAST
-        </h3>
-        <ul>
-          <li class="day-1">
+        </h4>
+        <ul id="forecast">
+          <li class="days">
             FRIDAY
             <div><i class="fas fa-cloud-showers-heavy"></i></div>
           </li>
-          <li class="day-2">
+          <li class="days">
             SATURDAY
             <div><i class="fas fa-sun"></i></div>
           </li>
-          <li class="day-3">
+          <li class="days">
             SUNDAY
             <div><i class="fas fa-cloud-sun"></i></div>
           </li>
-          <li class="day-4">
+          <li class="days">
             MONDAY
             <div><i class="fas fa-cloud-showers-heavy"></i></div>
           </li>
-          <li class="day-5">
+          <li class="days">
             TUESDAY
             <div><i class="fas fa-sun"></i></div>
           </li>

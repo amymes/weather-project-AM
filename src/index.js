@@ -37,10 +37,23 @@ let currentHour = date.getHours();
 h2.innerHTML = `<strong>${currentDay}</strong>, ${currentMonth} ${currentDate}, ${currentHour}:${currentMinute}`;
 
 function showTemperature(response) {
-  document.querySelector("#city").innerHTML = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
-  let displayTemp = document.querySelector("#temperature");
-  displayTemp.innerHTML = `${temperature}°C`;
+  let temperatureElement = document.querySelector("#temperature");
+  let cityElement = document.querySelector("#city");
+  let humidityElement = document.querySelector("#humidity");
+  let windElement = document.querySelector("#wind");
+  let descriptionElement = document.querySelector("#description");
+
+  celsiusTemperature = response.data.main.temp;
+
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+  cityElement.innerHTML = response.data.name;
+  humidityElement.innerHTML = response.data.main.humidity;
+  windElement.innerHTML = Math.round(response.data.wind.speed);
+  descriptionElement.innerHTML = response.data.weather[0].description;
+  //document.querySelector("#city").innerHTML = response.data.name;
+  //let temperature = Math.round(response.data.main.temp);
+  //let displayTemp = document.querySelector("#temperature");
+  //displayTemp.innerHTML = `${temperature}°C`;
 }
 
 function searchCity(city) {
