@@ -29,12 +29,6 @@ a {
   color: white;
 }
 
-.currentImage {
-  padding: 5px 0 10px 0;
-  margin: 0 auto;
-  display: block;
-}
-
 .conditions {
   list-style: none;
   text-align: center;
@@ -61,28 +55,6 @@ a {
   margin: 15px 0 15px 20px;
 }
 
-#description {
-  text-align: center;
-}
-
-#search-button {
-  font-size: 14px;
-  padding: 5px 15px;
-  margin: 17px 2px 0 8px;
-}
-#current-location-button {
-  font-size: 14px;
-  margin: 17px 0 0 5px;
-  padding: 5px 15px;
-}
-
-#forecast {
-  list-style: none;
-  text-align: center;
-  padding: 0;
-  margin: 0 0 15px 0;
-}
-
 .temperature {
   text-align: center;
   padding: 0;
@@ -100,4 +72,32 @@ a {
   display: block;
   background-image: url(https://images.pexels.com/photos/1828305/pexels-photo-1828305.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500);
   font-family: "Quicksand", sans-serif;
+}
+
+#current-location-button {
+  font-size: 14px;
+  margin: 17px 0 0 5px;
+  padding: 5px 15px;
+}
+
+#description {
+  text-align: center;
+}
+
+#forecast {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#icon {
+  padding: 5px 0 10px 0;
+  margin: 0 auto;
+  display: block;
+}
+#search-button {
+  font-size: 14px;
+  padding: 5px 15px;
+  margin: 17px 2px 0 8px;
 }
