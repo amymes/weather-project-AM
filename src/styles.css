@@ -55,15 +55,20 @@ a {
   margin: 15px 0 15px 20px;
 }
 
-.temperature {
+.temperatureDisplay {
   text-align: center;
   padding: 0;
   margin: 15px 15px 25px 15px;
-  font-size: 50px;
+  font-size: 40px;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 10px;
 }
+
+.units {
+  font-size: 30px;
+}
+
 .weatherapp {
   border: 2px solid grey;
   border-radius: 10px;

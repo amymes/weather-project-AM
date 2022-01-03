@@ -63,13 +63,16 @@
         </div>
         <div>
           <ul class="conditions">
-            <li>WIND: <span id="wind"></span>m/h</li>
-            <li>HUMIDITY: <span id="humidity"></span>%</li>
+            <li><strong>WIND:</strong> <span id="wind"></span>m/h</li>
+            <li><strong>HUMIDITY:</strong> <span id="humidity"></span>%</li>
           </ul>
         </div>
-        <div class="temperature" id="temperature">
-          <span id="celcius">°C</span>
-          <span id="fahrenheit">°F</span>
+        <div class="temperatureDisplay" id="temperatureDisplay">
+          <strong id="temperature" class="temperature"></strong>
+          <span class="units">
+            <a href="#" id="celsius-link">°C</a> |
+            <a href="#" id="fahrenheit-link">°F</a>
+          </span>
         </div>
 
         <h4>

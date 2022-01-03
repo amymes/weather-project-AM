@@ -34,6 +34,16 @@ let currentDate = date.getDate();
 let currentMinute = date.getMinutes();
 let currentHour = date.getHours();
 
+if (currentMinute < 10) {
+  currentMinute = `0${currentMinute}`;
+}
+
+if (currentHour < 12) {
+  currentMinute = `${currentMinute}am`;
+} else {
+  currentMinute = `${currentMinute}pm`;
+}
+
 h2.innerHTML = `<strong>${currentDay}</strong>, ${currentMonth} ${currentDate}, ${currentHour}:${currentMinute}`;
 
 function showTemperature(response) {
@@ -87,8 +97,30 @@ function findCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchCoordinates);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+let celsiusTemperature = null;
+
 let searchForm = document.querySelector("#search-city");
 searchForm.addEventListener("submit", search);
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", findCurrentLocation);
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+searchCity("London");
