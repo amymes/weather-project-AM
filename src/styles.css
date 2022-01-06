@@ -24,7 +24,6 @@ h4 {
 
 a {
   margin: 0 auto;
-  display: block;
   text-align: center;
   color: white;
 }
@@ -53,6 +52,11 @@ a {
 }
 .form-control {
   margin: 15px 0 15px 20px;
+}
+
+.repository {
+  display: block;
+  margin: 0 auto;
 }
 
 .temperatureDisplay {
