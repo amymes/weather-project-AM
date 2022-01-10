@@ -41,8 +41,8 @@ h4 {
 }
 
 .repository {
-  display: block;
   margin: 0 auto;
+  display: block;
   text-align: center;
 }
 
@@ -84,13 +84,9 @@ h4 {
 }
 .weather-forecast {
   margin-top: 20px;
+  margin: 0 0 15px 80px;
   text-align: center;
   font-family: "Be Vietnam Pro", sans-serif;
-}
-
-.weather-forecast-date {
-  font-size: 16px;
-  color: black;
 }
 
 .weather-forecast-temperature-min {
@@ -104,8 +100,12 @@ h4 {
 
 #current-location-button {
   font-size: 14px;
-  margin: 17px 0 0 5px;
+  margin: 17px 0 0 10px;
   padding: 5px 15px;
+  background-color: #212529;
+  color: white;
+  opacity: 0.6;
+  border-color: #212529;
 }
 
 #description {
@@ -120,5 +120,9 @@ h4 {
 #search-button {
   font-size: 14px;
   padding: 5px 15px;
-  margin: 17px 2px 0 8px;
+  margin: 17px 2px 0 15px;
+  background-color: #212529;
+  color: white;
+  opacity: 0.6;
+  border-color: #212529;
 }
